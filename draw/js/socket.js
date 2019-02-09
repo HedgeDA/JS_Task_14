@@ -1,6 +1,6 @@
 'use strict';
 
-const wsDraw = new WebSocket('ws://neto-api.herokuapp.com/draw');
+const wsDraw = new WebSocket('wss://neto-api.herokuapp.com/draw');
 
 function drawOpen(event) {
   console.log('open');
