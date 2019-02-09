@@ -8,22 +8,7 @@ function editorUpdate(event) {
   wsDraw.send(binary.buffer);
 }
 
-function drawOpen(event) {
-  console.log('open');
-  console.log(event);
-  console.log(event.data);
-}
-
-function drawMessage(event) {
-  console.log('message');
-  console.log(event);
-  console.log(event.data);
-}
-
-
 function init() {
-  wsDraw.addEventListener('open', drawOpen);
-  wsDraw.addEventListener('message', drawMessage);
   window.editor.addEventListener('update', editorUpdate);
 }
 
